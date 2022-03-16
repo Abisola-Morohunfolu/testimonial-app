@@ -1,15 +1,46 @@
 .InputField {
 	display: flex;
 	flex-direction: column;
+	width: max-content;
 }
 
 .InputField label {
 	display: block;
 	font-family: inherit;
+	color: #676767;
+	font-weight: 500;
+	font-size: 12px;
+	margin-bottom: 6px;
 }
 
 .Input {
-	border: 1px solid #eee;
+	border: 1px solid #eaeaea;
 	border-radius: 3px;
-	padding: 5px;
+	padding: 10px;
+	font-family: inherit;
+}
+
+.TextArea {
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	padding: 10px;
+	font-family: inherit;
+	outline: none;
+	min-width: 30vw;
+	min-height: 10rem;
+}
+
+.Button {
+	background-color: var(--color-primary);
+	padding: 8px 16px;
+	border: none;
+	outline: none;
+	margin-top: 2rem;
+	color: #fff;
+	font-family: inherit;
+	min-width: 30vw;
+	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
 }

@@ -40,39 +40,59 @@ const ShareYourStory = () => {
 		reset();
 	};
 	return (
-		<Container>
+		<Container sx={{ justifyContent: 'center' }}>
 			<form onSubmit={handleSubmit(submitForm)}>
-				<Box sx={{ marginBottom: '2rem' }}>
+				<Box sx={{ marginBottom: '2rem' }} className={classes.InputField}>
 					{/* <InputLabel htmlFor="upload-file">Upload Image</InputLabel> */}
-					<input id="upload-file" type="file" onChange={uploadFile} required />
+					<label htmlFor="firstName" className={classes.Label}>
+						Upload an Image
+					</label>
+					<input
+						id="upload-file"
+						type="file"
+						onChange={uploadFile}
+						required
+						className={classes.Input}
+					/>
 				</Box>
-				<Box>
+				<Box sx={{ display: 'flex', marginBottom: '2rem' }}>
 					<Box className={classes.InputField} sx={{ marginRight: '2rem' }}>
-						<label htmlFor="first-name" className={classes.Label}>
+						<label htmlFor="firstName" className={classes.Label}>
 							First Name
 						</label>
 						<input
 							className={classes.Input}
 							required
-							id="first-name"
+							id="firstName"
 							label="First Name"
 							type="text"
 							{...register('firstName')}
 						/>
 					</Box>
-					<Box>
-						<label htmlFor="last-name">Last Name</label>
-						<input required id="outlined" label="Last Name" type="text" {...register('lastName')} />
+					<Box className={classes.InputField}>
+						<label htmlFor="lastName" className={classes.Label}>
+							Last Name
+						</label>
+						<input
+							className={classes.Input}
+							required
+							id="lastName"
+							label="Last Name"
+							type="text"
+							{...register('lastName')}
+						/>
 					</Box>
 				</Box>
 
-				<Box sx={{ marginBottom: '2rem' }}>
-					<h6>Share Your Story</h6>
-					<textarea id="story" {...register('story')} required />
+				<Box sx={{ marginBottom: '2rem' }} className={classes.InputField}>
+					<label htmlFor="story" className={classes.Label}>
+						Share Your Story
+					</label>
+					<textarea id="story" {...register('story')} required className={classes.TextArea} />
 				</Box>
 
-				<Box sx={{ display: 'flex' }}>
-					<label htmlFor="category" style={{ color: '#888' }}>
+				<Box sx={{ display: 'flex', marginBottom: '2rem' }}>
+					<label htmlFor="category" className={classes.Label}>
 						What did you interact with Vasiti as?
 					</label>
 					<Box sx={{ display: 'flex' }}>
@@ -100,11 +120,21 @@ const ShareYourStory = () => {
 						</div>
 					</Box>
 				</Box>
-				<Box>
-					<h6>City or Higher Institution (for Students)</h6>
-					<input required id="outlined" type="text" {...register('location')} />
+				<Box className={classes.InputField}>
+					<label htmlFor="location" className={classes.Label}>
+						City or Higher Institution (for Students)
+					</label>
+					<input
+						required
+						id="outlined"
+						type="text"
+						{...register('location')}
+						className={classes.Input}
+					/>
 				</Box>
-				<button type="submit">Share Your Story</button>
+				<button type="submit" className={classes.Button}>
+					Share Your Story
+				</button>
 			</form>
 		</Container>
 	);

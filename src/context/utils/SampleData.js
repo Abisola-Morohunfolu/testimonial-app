@@ -81,7 +81,7 @@ export const allCustomerData = [
 	},
 	{
 		name: 'Temi Obadofin',
-		category: 'Vendor',
+		category: 'vendor',
 		image: 'https://res.cloudinary.com/abisola/image/upload/v1647430771/Ellipse_22_2_pbgbog.png',
 
 		testimonial:

@@ -30,6 +30,10 @@
 	color: #0d019a;
 }
 
+.vendor {
+	color: #049a01;
+}
+
 @media only screen and (min-width: 600px) {
 	.TestimonialCard {
 		width: 40%;
