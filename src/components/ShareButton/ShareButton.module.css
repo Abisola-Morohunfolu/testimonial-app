@@ -4,6 +4,7 @@
 	background: url('https://res.cloudinary.com/abisola/image/upload/v1647437696/Vector_3_su71xg.svg');
 	background-repeat: no-repeat;
 	background-position: bottom;
-	display: block;
 	text-align: center;
+	text-transform: uppercase;
+	font-family: inherit !important;
 }

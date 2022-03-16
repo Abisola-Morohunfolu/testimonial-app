@@ -1,11 +1,17 @@
 import classes from './ShareButton.module.css';
-import { Button } from '@mui/material';
+import { Link } from '@mui/material';
 
 const ShareButton = ({ color, onClick }) => {
 	return (
-		<Button className={classes.ShareButton} sx={{ color: color }} onClick={onClick}>
+		<Link
+			href="/share-your-story"
+			className={classes.ShareButton}
+			sx={{ color: color }}
+			onClick={onClick}
+			underline="none"
+		>
 			Share your story
-		</Button>
+		</Link>
 	);
 };
 

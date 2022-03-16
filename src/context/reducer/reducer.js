@@ -6,14 +6,24 @@ import { allCustomerData, allVendorData } from '../utils/SampleData';
 // USER IS REDIRECTED TO CHECKOUT AFTER LOGGING IN
 
 export const initialState = {
-	vendorTestimonials: [...allVendorData],
-	customerTestimonials: [...allCustomerData],
+	testimonials: [...allCustomerData],
 };
 
 export const reducer = (state = initialState, action) => {
 	switch (action.type) {
 		case 'ADD_TESTIMONIAL':
-			return state;
+			const tempState = [...state.testimonials];
+			const newTestimonial = {
+				name: `${action.payload.firstName} ${action.payload.lastName}`,
+				category: action.payload.category,
+				image: action.payload.image,
+				testimonial: action.payload.story,
+				location: action.payload.location,
+			};
+			tempState.push(newTestimonial);
+			return {
+				testimonials: [...tempState],
+			};
 
 		default:
 			return state;

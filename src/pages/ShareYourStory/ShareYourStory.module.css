@@ -1,0 +1,15 @@
+.InputField {
+	display: flex;
+	flex-direction: column;
+}
+
+.InputField label {
+	display: block;
+	font-family: inherit;
+}
+
+.Input {
+	border: 1px solid #eee;
+	border-radius: 3px;
+	padding: 5px;
+}
