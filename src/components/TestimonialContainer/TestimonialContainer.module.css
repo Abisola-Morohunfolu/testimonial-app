@@ -1,0 +1,12 @@
+.TestimonialContainer {
+	display: flex !important;
+	background-color: #fff;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+	.TestimonialContainer {
+		flex-direction: row;
+	}
+}

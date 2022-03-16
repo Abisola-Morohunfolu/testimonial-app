@@ -1,0 +1,54 @@
+.ContainerStyles {
+	display: flex;
+	flex-direction: column;
+}
+
+.Reverse {
+	flex-direction: column-reverse;
+}
+
+.TestimonialFeatureImage {
+	width: 100%;
+	background: #2e2e2e;
+	border-radius: 50%;
+}
+
+.TestimonialFeatureHeading {
+	font-size: 24px;
+}
+
+.TestimonialFeatureHeading span {
+	text-transform: uppercase;
+	padding: 3px;
+	border: 1px solid #fff;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 3px;
+	display: block;
+	width: max-content;
+}
+
+.TestimonialFeatureText {
+	font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+	.ContainerStyles {
+		display: flex !important;
+		flex-direction: row-reverse !important;
+	}
+	.Reverse {
+		flex-direction: row !important;
+	}
+
+	.TestimonialFeatureTextBox {
+		padding: 5rem 2rem;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.ContainerStyles {
+		max-width: 100% !important;
+	}
+}

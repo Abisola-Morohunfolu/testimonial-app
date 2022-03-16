@@ -1,0 +1,49 @@
+.TestimonialCard {
+	margin: 3rem 1rem;
+}
+
+.TestimonialCardImage {
+	height: 9rem;
+	width: 9rem;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.TestimonialCardName {
+	font-size: 24px;
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.customer,
+.vendor {
+	display: inline-block;
+	background-color: #eef8ff;
+	text-transform: uppercase;
+	padding: 5px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.customer {
+	color: #0d019a;
+}
+
+@media only screen and (min-width: 600px) {
+	.TestimonialCard {
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 968px) {
+	.TestimonialCard {
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.TestimonialCard {
+		margin: 3rem 1.5rem;
+	}
+}

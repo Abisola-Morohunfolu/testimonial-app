@@ -1,0 +1,25 @@
+.Heading {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	color: #000;
+}
+
+.HeaderImageBackground {
+	background-color: #fff8f5;
+	height: 100%;
+	position: fixed;
+	top: 55%;
+	left: -20%;
+	right: -10%;
+	/* bottom: -35%; */
+	z-index: -5;
+	width: 130%;
+	border-radius: 100%;
+}
+
+.HeaderImage {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
