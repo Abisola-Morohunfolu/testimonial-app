@@ -1,9 +1,6 @@
-import * as actionTypes from '../actions/actionTypes';
-import { allCustomerData, allVendorData } from '../utils/SampleData';
+// import * as actionTypes from '../actions/actionTypes';
+import { allCustomerData } from '../utils/SampleData';
 
-// IMPORTANT!!!!!!!!!!!!!!!!!!!
-// TO CHECKOUT FIELD IS FOR BETTER UX, IF TO CHECKOUT IS MARKED TRUE BEFORE LOGGING IN
-// USER IS REDIRECTED TO CHECKOUT AFTER LOGGING IN
 
 export const initialState = {
 	testimonials: [...allCustomerData],
